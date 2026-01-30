@@ -1,0 +1,70 @@
+body {
+    font-family: Montserrat;
+    background: #FFC0CB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+}
+
+h1, h2, p {
+    text-align: center;
+    margin: 0px 0;
+}
+
+.outside {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.outside h1 {
+    font-family: Story of Love;
+    font-size: 60px;
+    margin: 10px 0;
+}
+
+.outside p {
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.container {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0,15);
+
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px 20px;
+    display: block;
+    width: 150px;
+}
+
+#yes {
+    background: #ff4d6d;
+    color: white;
+}
+
+#no {
+    background: #cccccc;
+}
