@@ -1,8 +1,30 @@
+@font-face {
+  font-family: "Pine Words";
+  src: url("PineWords-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#introOverlay {
+  position: fixed;
+  inset: 0; /* top:0; left:0; bottom:0; right:0 */
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100; /* above everything else */
+  flex-direction: column;
+  font-size: 24px;
+  color: #ff4d6d;
+  cursor: pointer;
+  transition: opacity 1s ease;
+}
+
 body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
 
@@ -21,9 +43,28 @@ body {
     height: 100vh;
 }
 
+#introOverlay p {
+  color: #ff4d6d; 
+  font-size: 28px; 
+  font-family: "Pine Words", cursive;
+  text-align: center;
+}
+
+
 h1, h2, p {
     text-align: center;
     margin: 0px 0;
+}
+
+h1 {
+    position: relative;
+    top: -90px;
+}
+
+p {
+    color: white;
+    position: relative;
+    top: -80px;
 }
 
 .outside {
@@ -32,13 +73,14 @@ h1, h2, p {
 }
 
 .outside h1 {
-    font-family: Story of Love;
-    font-size: 60px;
+    font-family: "Pine Words";
+    color: white;
+    font-size: 130px;
     margin: 10px 0;
 }
 
 .outside p {
-    font-size: 15px;
+    font-size: 35px;
     margin: 5px 0;
 }
 
@@ -47,7 +89,7 @@ h1, h2, p {
     padding: 30px 40px;
     border-radius: 20px;
     text-align: center;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0,15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 
     display: flex;
     flex-direction: column;
@@ -83,4 +125,11 @@ button {
 
 }
 
+#catMeme {
+  display: none;
+  width: 300px;
+  margin-top: 20px;
+  transform: scale(0);
+  transition: transform 0.5s ease;
+}
 
