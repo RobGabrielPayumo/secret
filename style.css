@@ -1,6 +1,19 @@
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* adjust darkness */
+  z-index: -1;
+}
+
 body {
     font-family: Montserrat;
-    background: #FFC0CB;
+
+    
+    background-image: url("597661054_871173802090600_4353351670151535428_n.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,4 +80,5 @@ button {
 
 #no {
     background: #cccccc;
+
 }
